@@ -1,15 +1,19 @@
+import DockerInstructions from "@/components/docker-inst";
 import Hero from "@/components/hero";
-import LandingPage from "@/components/landing";
-
 
 export default function Home() {
   return (
-    <main className="flex h-full w-full flex-col items-center justify-between">
-      <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
-      {/* Radial gradient for the container to give a faded look */}
-      <Hero />
-
-    </div>
+    <main className="h-screen w-full flex items-center justify-center">
+      <div className="flex flex-col relative h-screen w-full overflow-y-auto dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+        {/* Hero component */}
+        <div className="p-4">
+          <Hero />
+        </div>
+        {/* DockerInstructions component */}
+        <div className="p-4">
+          <DockerInstructions />
+        </div>
+      </div>
     </main>
   );
 }
