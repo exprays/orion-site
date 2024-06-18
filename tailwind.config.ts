@@ -18,6 +18,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+
 const config = {
   darkMode: ["class"],
   content: [
