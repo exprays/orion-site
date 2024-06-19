@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 import localFont from 'next/font/local'
+import { constructMetadata } from "@/lib/metadata";
  
 // Font files can be colocated inside of `app`
 const satoshi = localFont({
@@ -11,10 +11,7 @@ const satoshi = localFont({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: "Orion",
-  description: "Database of future",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
