@@ -1,4 +1,5 @@
 import DockerInstructions from "@/components/docker-inst";
+import Features from "@/components/features";
 import Hero from "@/components/hero";
 
 export default function Home() {
@@ -12,6 +13,10 @@ export default function Home() {
         {/* DockerInstructions component */}
         <div className="p-4">
           <DockerInstructions />
+        </div>
+        {/** Features */}
+        <div className="p-4">
+          <Features />
         </div>
       </div>
     </main>

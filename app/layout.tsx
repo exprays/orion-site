@@ -3,7 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from 'next/font/local'
+ 
+// Font files can be colocated inside of `app`
+const satoshi = localFont({
+  src: './Satoshi-Variable.woff',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Orion",
@@ -17,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={satoshi.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
