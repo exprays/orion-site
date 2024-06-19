@@ -1,0 +1,28 @@
+
+
+# GETDEL
+
+### Syntax:
+
+```bash
+GETDEL key
+```
+
+###### **Available since:** 1.0.0
+###### **Time complexity:** O(1)
+
+###### **Description:** Get the value of key and delete the key. This command is similar to GET, except for the fact that it also deletes the key on success (if and only if the key's value type is a string).
+
+#### Examples
+
+```bash
+orion> SET mykey "Hello"
+"OK"
+orion> GETDEL mykey
+"Hello"
+orion> GET mykey
+(nil)
+orion> 
+
+
+```

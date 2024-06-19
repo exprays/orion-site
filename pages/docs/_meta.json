@@ -1,0 +1,9 @@
+{
+    "index": "Introduction",
+    "quick-start": "Quick Start",
+    "api-reference": "API Reference",
+    "---": {
+        "type": "separator"
+      },
+    "all-commands": "Explore all commands"
+}

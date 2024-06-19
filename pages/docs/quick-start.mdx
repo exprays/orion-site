@@ -1,0 +1,103 @@
+import { Callout, Steps } from 'nextra/components'
+
+# Quick Start Guide
+
+Welcome to the OrionDB Quick Start Guide! This guide will help you get OrionDB up and running quickly. Follow the steps below to get started.
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+- **Go Installed**: Make sure you have [Go](https://golang.org/doc/install) installed on your machine.
+- **Git**: Ensure you have [Git](https://git-scm.com/downloads) installed for version control.
+- **Docker**: Optional, if you prefer using Docker, make sure [Docker](https://www.docker.com/products/docker-desktop) is installed.
+
+<Steps>
+
+### Step 1: Clone the Project
+
+First, clone the OrionDB repository from GitHub:
+
+```bash
+git clone https://github.com/exprays/orion
+```
+
+Go to the project directory
+
+```bash
+cd orion
+```
+
+### Step 2: Start the server
+
+```bash
+go run main.go --mode=server --port=6379
+```
+<Callout type="info" emoji="ℹ️">
+  OrionDB will start on port 6379. You can change the port by modifying the --port flag.
+</Callout>
+
+### Step 3: Start the client
+
+```bash
+go run main.go --mode=client 127.0.0.1:6379
+```
+
+In another terminal, start the OrionDB client to conect to the server.
+
+### Step 4: Basic Commands
+
+Once connected, you can start using basic commands. Here are a few examples:
+
+Set a Key-Value Pair:
+
+```bash
+SET key1 "Hello, OrionDB!"
+```
+Get a Value:
+
+```bash
+GET key1
+```
+
+Delete a Key:
+
+```bash
+DEL key1
+```
+
+</Steps>
+
+# Using Docker
+
+Alternatively, you can run OrionDB using Docker. This method is convenient if you prefer containerized environments.
+
+<Steps>
+
+### Step 1: Pull the Docker Image
+First, pull the OrionDB Docker image from the Docker Hub:
+
+```bash
+docker pull exprays/orion:latest
+```
+### Step 2: Run the Docker Container
+Run the Docker container with the following command:
+
+```bash
+docker run -d -p 6379:6379 exprays/orion:latest
+```
+
+This will start the OrionDB server in a Docker container and map port 6379 on your host to the container.
+
+### Step 3: Connect to the Docker Container
+Use Orion client to connect to OrionDB running in the Docker container:
+
+```bash
+orion-cli -h 127.0.0.1 -p 6379
+```
+
+</Steps>
+
+You can now interact with the OrionDB server running inside the Docker container.
+
+Congratulations! You've successfully set up OrionDB and connected to it. Explore further documentation to leverage the full potential of OrionDB.

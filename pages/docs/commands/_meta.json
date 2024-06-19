@@ -1,0 +1,15 @@
+{
+    "append": "APPEND",
+    "decr": "DECR",
+    "decrby": "DECRBY",
+    "get": "GET",  
+    "getdel": "GETDEL",
+    "getex": "GETEX",
+    "getrange": "GETRANGE",
+    "getset": "GETSET",
+    "incr": "INCR",
+    "incrby": "INCRBY",
+    "incrbyfloat": "INCRBYFLOAT",
+    "lcs": "LCS",
+    "set": "SET"
+}
