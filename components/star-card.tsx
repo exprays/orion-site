@@ -5,8 +5,17 @@ import {
   GlowingStarsDescription,
   GlowingStarsTitle,
 } from "@/components/magicui/glowing-stars";
+import { useRouter } from "next/navigation";
+
 
 export function GlowingStarsBackgroundCardComp() {
+
+  const router = useRouter();
+
+  const onClick = () => {
+    router.push("https://golang.org/");
+  }
+
   return (
     <div className="flex py-20 items-center justify-center antialiased">
       <GlowingStarsBackgroundCard>
@@ -15,7 +24,7 @@ export function GlowingStarsBackgroundCardComp() {
           <GlowingStarsDescription>
             The power of inbuilt concurrency and performance
           </GlowingStarsDescription>
-          <div className="h-8 w-8 rounded-full bg-[hsla(0,0%,100%,.1)] flex items-center justify-center">
+          <div onClick={onClick} className="h-8 w-8 rounded-full bg-[hsla(0,0%,100%,.1)] flex items-center justify-center cursor-pointer">
             <Icon />
           </div>
         </div>
