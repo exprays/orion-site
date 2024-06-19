@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import SecurityLogo from "@/components/assets/security.svg";
 import DiscLogo from "@/components/assets/datadisk.svg";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { LockClosedIcon, FileTextIcon, InputIcon, DiscIcon } from "@radix-ui/react-icons";
+import { LockClosedIcon, LightningBoltIcon, FileTextIcon, DiscIcon } from "@radix-ui/react-icons";
 import { Share2Icon } from "lucide-react";
 import { AnimatedBeamMultipleOutputDemo } from "./animated-beam-multiple-outputs";
 import Image from "next/image";
@@ -143,7 +143,7 @@ const features = [
     ),
   },
   {
-    Icon: InputIcon,
+    Icon: LightningBoltIcon,
     name: "Low Latency",
     description: "Real-time updates and low latency.",
     href: "/",
