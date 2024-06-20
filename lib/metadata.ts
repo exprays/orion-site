@@ -4,13 +4,11 @@ export function constructMetadata({
     title = "Orion",
     description = "Database of the Future",
     image = "https://orion.thestarsociety.tech/thumbnail.png",
-    icons = "/favicon.ico",
     noIndex = false
   }: {
     title?: string
     description?: string
     image?: string
-    icons?: string
     noIndex?: boolean
   } = {}): Metadata {
     return {
@@ -32,7 +30,6 @@ export function constructMetadata({
         images: [image],
         creator: "@exprays"
       },
-      icons,
       metadataBase: new URL('https://orion.thestarsociety.tech'),
       themeColor: '#FFF',
       ...(noIndex && {
