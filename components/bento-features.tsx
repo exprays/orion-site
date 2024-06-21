@@ -182,7 +182,7 @@ const features = [
   {
     Icon: Share2Icon,
     name: "Integrations",
-    description: "Supports 100+ integrations and counting.",
+    description: "Supports AI integration for IQO",
     href: "/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",

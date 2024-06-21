@@ -13,7 +13,7 @@ export default function Navbar() {
       <nav className="ml-auto flex items-center space-x-4">
         <Link
           href="https://github.com/exprays/orion"
-          className="inline-flex items-center justify-center rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-muted-foreground focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-muted-foreground focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           prefetch={false}
         >
           <GitHubLogoIcon className="h-5 w-5 mr-2"/>
@@ -21,7 +21,7 @@ export default function Navbar() {
         </Link>
         <Link
           href="https://orion.thestarsociety.tech/docs"
-          className="inline-flex items-center justify-center rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-muted-foreground focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-muted-foreground focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           prefetch={false}
         >
           <BookIcon className="h-5 w-5 mr-2" />
