@@ -1,7 +1,9 @@
 {
     "index": "Introduction",
     "quick-start": "Quick Start",
+    "for-nerds": "Installation for Nerds",
     "api-reference": "API Reference",
+    "packages": "Packages",
     "---": {
         "type": "separator"
       },

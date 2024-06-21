@@ -5,6 +5,7 @@ import { GlowingStarsBackgroundCardComp } from "./star-card";
 
 
 export default function Hero() {
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
@@ -19,7 +20,7 @@ export default function Hero() {
                 Orion is a powerful in-memory database that is built on the Key-value store written from scratch. It is designed to be fast, reliable and easy to use.
               </p>
               <div className="pt-4">
-              <ShinyButton text="Canary 1.0 available now"/>
+              <ShinyButton text="Nightly 1.0.1 available now"/>
               </div>
             </div>
           </div>

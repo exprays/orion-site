@@ -23,13 +23,13 @@ export default function UseCases() {
           </div>
           <div className="grid grid-cols-1 gap-6 py-12 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           <div className="items-center justify-center space-y-4 p-6 shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <EvervaultCardComponent mainText="Caching" description="A fast, highly available, resilient, and scalable caching layer" buttonText="Learn more"/>
+          <EvervaultCardComponent mainText="Caching" description="A fast, highly available, resilient, and scalable caching layer" buttonText="Coming soon"/>
           </div>
           <div className="items-center justify-center space-y-4 p-6 shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <EvervaultCardComponent mainText="AI" description="Implement vector search with Orion Bolt®" buttonText="Explore"/>
+          <EvervaultCardComponent mainText="AI" description="Implement vector search with Orion Bolt®" buttonText="Coming soon"/>
           </div>
           <div className="items-center justify-center space-y-4 p-6 shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <EvervaultCardComponent mainText="Data" description="Deliver with low latency using Orion FlashX®" buttonText="Explore"/>
+          <EvervaultCardComponent mainText="Data" description="Deliver with low latency using Orion FlashX®" buttonText="Coming soon"/>
           </div>
           </div> 
         </div>
