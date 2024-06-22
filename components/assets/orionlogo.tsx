@@ -7,7 +7,7 @@ interface IconProps {
   width?: number;
 }
 
-export const OrionLogo: React.FC<IconProps> = ({ height, width }) => (
+export const OrionLogo: React.FC<IconProps> = ({ height = 128, width = 128 }) => (
   
     
     <svg width={width} height={height} viewBox="0 0 353 90" fill="none" xmlns="http://www.w3.org/2000/svg">
