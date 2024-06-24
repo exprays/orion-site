@@ -31,6 +31,14 @@ export default {
           🎉 Orion 1.0.0 nightly is released. Read more →
         </a>
       )
-    }
+    },
+    feedback: {
+      content: 'Question? Give us feedback →',
+      labels: 'feedback',
+      useLink() {
+        return 'https://github.com/exprays/orion/issues/new'
+      }
+    },
+    editLink: false,
     // ... other theme options
   }
