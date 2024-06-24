@@ -1,0 +1,27 @@
+
+
+# FLUSHALL
+
+### Syntax:
+
+```bash
+FLUSHALL
+```
+
+###### **Available since:** 1.0.0
+###### **Time complexity:** O(N) where N is the total number of keys in all databases 
+
+###### **Description:** Delete all the keys of all the existing databases, not just the currently selected one. This command never fails.
+
+#### Examples
+
+```bash
+orion> SET mykey "Hello"
+"OK"
+orion> GET mykey
+"Hello"
+orion> FLUSHALL
+"OK"
+orion> GET mykey
+(nil)
+```

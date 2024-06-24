@@ -1,0 +1,25 @@
+
+
+# TTL
+
+### Syntax:
+
+```bash
+TTL key
+```
+
+###### **Available since:** 1.0.0
+###### **Time complexity:** O(1)
+
+###### **Description:** Returns the remaining time to live of a key that has a timeout. This introspection capability allows a Hunter client to check how many seconds a given key will continue to be part of the dataset.
+
+###### Example
+
+```bash
+orion> SETEX mykey "Hello" 30
+"OK"
+orion> TTL mykey
+(integer) 29 //29 seconds more to expire
+orion> GET mykey 
+(nil) //after 30 seconds
+```
