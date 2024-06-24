@@ -1,17 +1,30 @@
 import { Cards, Card } from 'nextra/components'
+import { useEffect, useState } from 'react'
 
-<Cards>
-  <Card title="APPEND" href="./commands/append" />
-  <Card title="DECR" href="./commands/decr" />
-  <Card title="DECRBY" href="./commands/decrby" />
-  <Card title="GET" href="./commands/get" />
-  <Card title="GETDEL" href="./commands/getdel" />
-  <Card title="GETEX" href="./commands/getex" />
-  <Card title="GETRANGE" href="./commands/getrange" />
-  <Card title="GETSET" href="./commands/getset" />
-  <Card title="INCR" href="./commands/incr" />
-  <Card title="INCRBY" href="./commands/incrby" />
-  <Card title="INCRBYFLOAT" href="./commands/incrbyfloat" />
-  <Card title="LCS" href="./commands/lcs" />
-  <Card title="SET" href="./commands/set" />
-</Cards>
+export const CommandsList = () => {
+  const [commands, setCommands] = useState([])
+
+  useEffect(() => {
+    async function loadCommands() {
+      const commandContext = require.context('/pages/docs/commands', false, /\.mdx$/)
+      const commandFiles = commandContext.keys()
+      setCommands(commandFiles.map(file => ({
+        title: file.replace(/^\.\//, '').replace(/\.mdx$/, '').toUpperCase(),
+        href: `./commands/${file.replace(/^\.\//, '').replace(/\.mdx$/, '')}`
+      })))
+    }
+    loadCommands()
+  }, [])
+
+  return (
+    <Cards>
+      {commands.map(command => (
+        <Card key={command.title} title={command.title} href={command.href} />
+      ))}
+    </Cards>
+  )
+}
+
+# All Commands
+
+<CommandsList />
