@@ -1,0 +1,6 @@
+{
+    "dbsize": "DBSIZE",
+    "flushall": "FLUSHALL",
+    "info": "INFO",
+    "time": "TIME"
+}

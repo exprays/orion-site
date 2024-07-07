@@ -12,9 +12,5 @@
     "incrbyfloat": "INCRBYFLOAT",
     "lcs": "LCS",
     "set": "SET",
-    "flushall": "FLUSHALL",
-    "dbsize": "DBSIZE",
-    "info": "INFO",
-    "time": "TIME",
     "ttl": "TTL"
 }
