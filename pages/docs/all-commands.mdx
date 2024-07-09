@@ -6,7 +6,7 @@ export const CommandsList = () => {
 
   useEffect(() => {
     async function loadCommands() {
-      const commandContext = require.context('/pages/docs/commands', false, /\.mdx$/)
+      const commandContext = require.context('/pages/docs/Strings', false, /\.mdx$/)
       const commandFiles = commandContext.keys()
       setCommands(commandFiles.map(file => ({
         title: file.replace(/^\.\//, '').replace(/\.mdx$/, '').toUpperCase(),
