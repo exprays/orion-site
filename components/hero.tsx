@@ -20,7 +20,7 @@ export default function Hero() {
                 Orion is a powerful in-memory database that is built on the Key-value store written from scratch. It is designed to be fast, reliable and easy to use.
               </p>
               <div className="pt-4">
-              <ShinyButton text="Nightly 1.0.1 available now"/>
+              <ShinyButton text="Beta 0.0.1 available now"/>
               </div>
             </div>
           </div>
